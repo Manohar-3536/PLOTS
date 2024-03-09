@@ -16,7 +16,7 @@ st.altair_chart(chart)
 
 # line charts
 st.header("2. Interactive Charts")
-df = pd.read_csv("C:\PYTHON_DS\lang_data.csv")
+df = pd.read_csv("lang_data.csv")
 st.subheader("2.1 Line Chart")
 lang_list = df.columns.tolist()
 lang_choice = st.multiselect("Choose Your language:", lang_list)
@@ -28,7 +28,7 @@ st.area_chart(new_df)
 
 st.header("3. Data Visualization with Plotly")
 st.subheader("Displaying the dataset")
-df = pd.read_csv('C:\PYTHON_DS\pips.csv')
+df = pd.read_csv('pips.csv')
 st.dataframe(df.head())
 
 st.subheader("3.2 Pie Chart")
